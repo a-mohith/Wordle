@@ -1,8 +1,9 @@
 const words = [
-    "which",
-    "there",
-    "their",
+    "hello",
+    "react",
     "about",
+    "arise",
+    "alone",
     "would",
     "these",
     "other",

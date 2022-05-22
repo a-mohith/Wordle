@@ -5,7 +5,7 @@ import Game from './Component/Game'
 
 function App() {
   const reloadGame=()=>{
-    //reload game here
+    
     window.location="/"
   }
   return (
