@@ -4,9 +4,9 @@ import items from './words_list'
 
 export default function Game({ reloadGame }) {
     const [gameStarted, setGameStarted] = useState(false)
-    const [word, setWord] = useState("")//real word saved here
-    const [letters, setLetters] = useState([[], [], [], [], [], []])//user chosen letters 2d list
-    const [tries, setTries] = useState(0)//or current index
+    const [word, setWord] = useState("")
+    const [letters, setLetters] = useState([[], [], [], [], [], []])
+    const [tries, setTries] = useState(0)
 
 
 
@@ -17,7 +17,7 @@ export default function Game({ reloadGame }) {
     const checkWinning = () => {
         console.log(letters, word.split(""))
         if (JSON.stringify(letters[tries]) == JSON.stringify(word.split(""))) {
-            //means won
+            
             alert("Congrats you won!!!")
             reloadGame()
         }
@@ -46,9 +46,9 @@ export default function Game({ reloadGame }) {
         }
     }
     const getColor = (index_word, index) => {
-        //if index matches return green color else other colors
+        
         if (index_word < tries) {
-            //if the game has ended else show white colors
+            
             if (letters[index_word][index] == word[index]) {
                 return "green"
             }
